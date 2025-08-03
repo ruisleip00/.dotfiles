@@ -1,5 +1,11 @@
 require("config.lazy")
 
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+    underline = true,
+})
+
 vim.api.nvim_set_hl(0, "@lsp.type.variable", { link = "@variable" })
 vim.api.nvim_set_hl(0, "@lsp.type.property", { link = "@property" })
 vim.api.nvim_set_hl(0, "@lsp.type.function", { link = "@function" })

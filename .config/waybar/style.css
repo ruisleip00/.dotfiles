@@ -1,27 +1,29 @@
-@define-color base      #191724;
-@define-color surface   #1f1d2e;
-@define-color overlay   #26233a;
-@define-color muted     #6e6a86;
-@define-color subtle    #908caa;
-@define-color text      #e0def4;
-@define-color love      #eb6f92;
-@define-color gold      #f6c177;
-@define-color rose      #ebbcba;
-@define-color pine      #31748f;
-@define-color foam      #9ccfd8;
-@define-color iris      #c4a7e7;
-@define-color highlight #2a283e;
+@define-color base      rgba(25, 23, 36, 1.0);
+@define-color surface   rgba(31, 29, 46, 1.0);
+@define-color overlay   #191724;
+@define-color muted     rgba(110, 106, 134, 1.0);
+@define-color subtle    rgba(144, 140, 170, 1.0);
+@define-color text      rgba(224, 222, 244, 1.0);
+@define-color love      rgba(235, 111, 146, 1.0);
+@define-color gold      rgba(246, 193, 119, 1.0);
+@define-color rose      rgba(235, 188, 186, 1.0);
+@define-color pine      rgba(49, 116, 143, 1.0);
+@define-color foam      rgba(156, 207, 216, 1.0);
+@define-color iris      rgba(196, 167, 231, 1.0);
+@define-color highlight rgba(42, 40, 62, 1.0);
+
 
 * {
   border: none;
   border-radius: 6px;
-  font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+  font-family: "Share Tech Mono Nerd Font", monospace;
+  font-weight: bold;
   font-size: 14px;
   min-height: 0;
 }
 
 window#waybar {
-  background-color: @base;
+  background-color: transparent;
   color: @text;
 }
 
@@ -32,13 +34,13 @@ tooltip {
 }
 
 #workspaces {
-  background: @overlay;
-  margin: 4px;
-  padding: 0 5px;
+    background: @overlay;
+    margin: 4px;
+    padding: 3px;
 }
 
 #workspaces button {
-  padding: 0 6px;
+  padding: 0 10px;
   color: @subtle;
 }
 
@@ -61,35 +63,43 @@ tooltip {
 }
 
 #clock {
-  color: @foam;
+    color: @foam;
+    background: @overlay;
 }
 
 #battery {
-  color: @gold;
+    color: @gold;
+    background: @overlay;
 }
 
 #battery.charging {
-  color: @foam;
+    color: @foam;
+    background: @overlay;
 }
 
 #pulseaudio {
-  color: @rose;
+    color: @rose;
+    background: @overlay;
 }
 
 #network {
-  color: @iris;
+    color: @iris;
+    background: @overlay;
 }
 
 #cpu {
-  color: @pine;
+    color: @pine;
+    background: @overlay;
 }
 
 #memory {
-  color: @love;
+    color: @love;
+    background: @overlay;
 }
 
 #custom-media {
-  color: @iris;
+    color: @iris;
+    background: @overlay;
 }
 
 #tray {

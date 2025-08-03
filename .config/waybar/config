@@ -24,7 +24,18 @@
         "interval": 2,
         "format": "RAM: {}%"
     },
-
+    "network": {
+        "interface": "wlan0",
+        "format-wifi": "{essid}",
+        "format-ethernet": "{ifname}",
+        "format-disconnected": "Disconnected"
+    },
+    "custom/network-launcher": {
+        "format": "+",
+        "tooltip": "Click to manage networks",
+        "on-click": "ghostty -e nmtui",
+        "interval": 0
+    },
     "pulseaudio": {
         "format": "Vol: {volume}%",
         "scroll-step": 5,

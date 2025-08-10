@@ -7,7 +7,10 @@
     "modules-right": ["cpu", "memory", "pulseaudio", "battery"],
 
     "hyprland/workspaces": {
-        "on-click": "activate"
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "DP-2" : [1, 2, 3, 4, 5]
+        }
     },
 
     "clock": {

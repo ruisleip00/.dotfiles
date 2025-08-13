@@ -1,109 +1,34 @@
-@define-color base      rgba(25, 23, 36, 1.0);
-@define-color surface   rgba(31, 29, 46, 1.0);
-@define-color overlay   #191724;
-@define-color muted     rgba(110, 106, 134, 1.0);
-@define-color subtle    rgba(144, 140, 170, 1.0);
-@define-color text      rgba(224, 222, 244, 1.0);
-@define-color love      rgba(235, 111, 146, 1.0);
-@define-color gold      rgba(246, 193, 119, 1.0);
-@define-color rose      rgba(235, 188, 186, 1.0);
-@define-color pine      rgba(49, 116, 143, 1.0);
-@define-color foam      rgba(156, 207, 216, 1.0);
-@define-color iris      rgba(196, 167, 231, 1.0);
-@define-color highlight rgba(42, 40, 62, 1.0);
-
+@define-color bg rgba(0,0,0,0.4);
+@define-color text rgba(255, 255, 255, 0.7);
+@define-color border #9ccfd8;
 
 * {
-  border: none;
-  border-radius: 6px;
-  font-family: "Share Tech Mono Nerd Font", monospace;
-  font-weight: bold;
-  font-size: 14px;
-  min-height: 0;
+    color: @text;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
 }
 
-window#waybar {
-  background-color: transparent;
-  color: @text;
+
+#waybar {
+    background: transparent;
 }
 
-tooltip {
-  background: @overlay;
-  color: @text;
-  border-radius: 6px;
-}
-
-#workspaces {
-    background: @overlay;
-    margin: 4px;
-    padding: 3px;
+#workspaces,
+#cpu,
+#clock {
+    background: @bg;
+    border-radius: 10px;
+    padding: 0px 5px; 
+    border: 1px solid @border;
 }
 
 #workspaces button {
-  padding: 0 10px;
-  color: @subtle;
+    padding: 1px 10px;
 }
 
-#workspaces button.active {
-  color: @text;
-  background: @highlight;
-}
 
-#clock,
-#battery,
-#pulseaudio,
-#network,
-#tray,
-#cpu,
-#memory,
-#custom-media {
-  background-color: @surface;
-  padding: 0 10px;
-  margin: 4px 4px;
-}
 
 #clock {
-    color: @foam;
-    background: @overlay;
+    font-weight: bold;
 }
-
-#battery {
-    color: @gold;
-    background: @overlay;
-}
-
-#battery.charging {
-    color: @foam;
-    background: @overlay;
-}
-
-#pulseaudio {
-    color: @rose;
-    background: @overlay;
-}
-
-#network {
-    color: @iris;
-    background: @overlay;
-}
-
-#cpu {
-    color: @pine;
-    background: @overlay;
-}
-
-#memory {
-    color: @love;
-    background: @overlay;
-}
-
-#custom-media {
-    color: @iris;
-    background: @overlay;
-}
-
-#tray {
-  background: @overlay;
-  padding: 0 6px;
-}
-

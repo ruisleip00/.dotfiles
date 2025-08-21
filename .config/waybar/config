@@ -1,21 +1,20 @@
 {
   "layer": "top",
   "position": "top",
-  "margin": 5,
+  "margin": 0,
   "spacing" : 15,
 
   "modules-left": [
       "hyprland/workspaces",
-      "cpu"
   ],
 
   "modules-center": ["clock"],
 
   "modules-right": [
+    "cpu",
     "bluetooth",
     "network",
     "pipewire", 
-    "battery",
   ],
 
   "hyprland/workspaces": {

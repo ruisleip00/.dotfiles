@@ -1,16 +1,8 @@
 return {
-    "rose-pine/neovim",
-    lazy = false,
-    priority = 1000,
+    "shaunsingh/nord.nvim",
     config = function()
-        require("rose-pine").setup({
-            styles = {
-                italic = false,
-                transparency = true,
-            },
-        })
-
-        vim.cmd.colorscheme("rose-pine-moon")
+        vim.g.nord_disable_background = true
+        vim.cmd.colorscheme("nord")
     end
 }
 

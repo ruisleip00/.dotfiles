@@ -5,22 +5,19 @@
 * {
     color: @text;
     font-size: 12px;
-    padding: 0;
+    padding: 0px 2px 0px 0px;
     margin: 0;
 }
 
 
 #waybar {
-    background: transparent;
+    background: @bg;
 }
 
 #workspaces,
 #cpu,
 #clock {
-    background: @bg;
-    border-radius: 10px;
     padding: 0px 5px; 
-    border: 1px solid @border;
 }
 
 #workspaces button {

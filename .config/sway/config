@@ -5,7 +5,9 @@
 # Read `man 5 sway` for a complete reference.
 
 
+# Window rules
 for_window [app_id="anki"] floating enable
+for_window [title="MEGAsync"] floating enable
 
 ### Variables
 #
@@ -71,13 +73,19 @@ output DP-1 scale 1.4
 #   }
 
 input type:pointer {
+
     pointer_accel -0.5
     scroll_factor 2.5
+
 }
 
+exec --no-startup-id fcitx5
+
 input type:keyboard {
+
     xkb_layout fi
     xkb_variant mac
+
 }
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -93,7 +101,7 @@ input type:keyboard {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+d exec $menu -theme Arc-Dark
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

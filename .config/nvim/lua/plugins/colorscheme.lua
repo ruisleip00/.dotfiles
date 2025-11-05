@@ -1,9 +1,13 @@
 return {
-    "shaunsingh/nord.nvim",
-    config = function()
-        vim.g.nord_disable_background = true
-        vim.cmd.colorscheme("nord")
-    end
+	"rose-pine/neovim",
+	name = "rose-pine",
+	config = function()
+        require("rose-pine").setup({
+            styles = {
+                transparency = true
+            }
+        })
+		vim.cmd("colorscheme rose-pine")
+	end
 }
-
 

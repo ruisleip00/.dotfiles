@@ -40,12 +40,26 @@ default_border pixel 2
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-output * bg /home/nuppi/.dotfiles/wallpapers/japan_dark.jpg fill
+output * bg /home/nuppi/.dotfiles/wallpapers/ghibliForest.png fill
 #
 # Example configuration:
 #
 output DP-1 mode 3840x2160@144.00Hz
 output DP-1 scale 1.5
+output DP-1 pos 0 0
+output HDMI-A-1 mode 3840x2160@120.00Hz
+output HDMI-A-1 scale 1.5
+
+
+# Workspaces
+workspace "1" output "DP-1"
+workspace "2" output "DP-1"
+workspace "3" output "DP-1"
+
+workspace "7" output "HDMI-A-1"
+workspace "8" output "HDMI-A-1"
+workspace "9" output "HDMI-A-1"
+
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 ### Idle configuration

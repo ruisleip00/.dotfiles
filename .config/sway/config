@@ -36,6 +36,8 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 smart_borders on
 default_border pixel 2
 
+client.focused #928374 #928374 #928374 #928374 #928374  
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)

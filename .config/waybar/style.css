@@ -4,8 +4,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.6);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: #1d2021;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -62,7 +61,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    background-color: #3c3836;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -89,6 +88,7 @@ button:hover {
 #tray,
 #mode,
 #idle_inhibitor,
+#language,
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
@@ -127,14 +127,14 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd,
 #language,
+#mpd,
 #battery.charging, 
 #battery.plugged {
     color: #ffffff;
-    background-color: rgba(60, 60, 60, 0.5);
+    background-color: transparent;
     margin-bottom: 3px;
-    border-left: 3px solid rgba(100, 114, 125, 0.5);
+    border-left: 3px solid #3c3836;
 }
 
 

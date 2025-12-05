@@ -40,7 +40,7 @@ default_border pixel 2
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-output * bg /home/nuppi/.dotfiles/wallpapers/ghibliForest.png fill
+output * bg /home/nuppi/.dotfiles/wallpapers/cat-painting.png fill
 #
 # Example configuration:
 #
